@@ -460,9 +460,16 @@ letter-spacing: 0.02em;
 
 .logo-footer {
   color: #f4f4fd;
+  
    
 
 }
+.footer-div {
+
+  display: flex;
+  align-items: baseline;
+}
+
 .footer-text{
   color:#F4F4FD;
   max-width: 264px;
@@ -513,3 +520,5 @@ width: 40px;
 .social-icon-href-footer:focus{
   background-color: #31d0aa;
 }
+
+ 
