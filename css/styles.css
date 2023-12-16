@@ -48,7 +48,7 @@ p{
 }
 
 /* HEADER */
-/* LOGO */
+ 
 
 .header {
 border-bottom: 1px solid #e7e9fc;
@@ -59,7 +59,7 @@ border-bottom: 1px solid #e7e9fc;
   align-items: center;
 }
  
-
+/* LOGO */
 .logo {
   color: var(--IRIS, #4d5ae5);
   font-family: "Raleway", sans-serif;
@@ -105,6 +105,23 @@ border-bottom: 1px solid #e7e9fc;
     text-decoration: none;
     padding: 24px 0;
 }
+.nav-studio{
+  position: relative;
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-studio::after{
+    content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      bottom: -1px;
+      height: 4px;
+      background-color: #404bbf;
+      border-radius: 2px;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 
 
 .nav-link:hover,
@@ -145,9 +162,16 @@ display: flex;
 /* HERO*/
 .hero{
   background-color: #2e2f42;
-    padding: 188px 0;
-    flex-shrink: 0;
+    padding: 188px 0 188px;
     text-align: center;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)),
+        url(../images/people-office.jpg);
+        max-width: 1440px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: auto;
 }
 .hero-title {
   color: var(--WHITE, #fff);
